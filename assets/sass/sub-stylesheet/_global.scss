@@ -1,0 +1,293 @@
+/*!
+<----------------------------------------
+  Theme Name: a2i blog 
+  Theme URI: http://a2itechnology.com/
+  Author: infoinlet.net.
+  Author URI: http://a2itechnology.com/
+  Description: a2itechnology blog template is a Creative HTML5 Template for Saas, Startup & any ytpe of confarence.
+  Version: 1.0.0
+  Tags: a2i, bloog, app landing page, app showcase template, application services, gradient color, landing, marketing, responsive template, seo, software, Software Services, startup, tech, web application landing page.
+---------------------------------------->
+*/
+/*
+>>> TABLE OF CONTENTS:
+<----------------------------------------------------------------
+  01. Default CSS
+  02. Global css
+  03. Header
+  04. sidebar menu
+  05. About
+  07. Roadmap
+  08. News
+  09. Team
+  10. Contact
+---------------------------------------------------------------->
+
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  counter-reset: my-sec-counter;
+  scroll-behavior: smooth;
+  background-color: #F9F9F9;
+}
+body.overflow{
+overflow: hidden;
+}
+.d-flex{
+  display: flex;
+}
+.float-r{
+  float: right;
+}
+.p-0{
+  padding: 0px 0px !important;
+}
+.m-0{
+  margin: 0px 0px !important;
+}
+.flex-wrape{
+  flex-wrap: wrap;
+}
+.area-center{
+  text-align: center;
+}
+.advertisement-ara{
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+  .content-overlay {
+  background: rgba(48, 47, 47, 0.534);
+  position: absolute;
+  height: 94%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content-image{
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    &:hover{
+        opacity: .2;
+    }
+}
+&:hover .content-overlay{
+  opacity: 1;
+}
+
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+&:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.fadeIn-bottom{
+  top: 80%;
+}
+.content-details{
+  h5{
+      font-weight: 400;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+      color: white;
+    }
+    p{
+      font-size: 0.8em;
+      color: white;
+    }
+}
+ 
+}
+.advertisement-ara-2{
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+  .content-overlay {
+  background: rgba(48, 47, 47, 0.534);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content-image{
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    &:hover{
+        opacity: .2;
+    }
+}
+&:hover .content-overlay{
+  opacity: 1;
+}
+
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+&:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.fadeIn-bottom{
+  top: 80%;
+}
+.content-details{
+  h5{
+      font-weight: 400;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+      color: white;
+    }
+    p{
+      font-size: 0.8em;
+      color: white;
+    }
+}
+ 
+}
+.advertisement-ara-3{
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+  .content-overlay {
+  background: rgba(48, 47, 47, 0.534);
+  position: absolute;
+  height: 98%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content-image{
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    &:hover{
+        opacity: .2;
+    }
+}
+&:hover .content-overlay{
+  opacity: 1;
+}
+
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+&:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.fadeIn-bottom{
+  top: 80%;
+}
+.content-details{
+  h5{
+      font-weight: 400;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+      color: white;
+    }
+    p{
+      font-size: 0.8em;
+      color: white;
+    }
+}
+ 
+}
+.section-header{
+  h3{
+      font-size: 2.5rem;
+      border-bottom: 2px solid #242526db;
+  }
+  .section-metatag{
+      a{
+          text-decoration: none;
+          color: black;
+          font-weight: 400;
+          padding: 5px 8px;
+          margin-right: 10px;
+          background-color: transparent;
+          transition: all 0.2s ease-in-out;
+          &:hover{
+              background-color: rgba(24, 24, 24, 0.18);
+          }
+      }
+  }
+}

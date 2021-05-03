@@ -1,0 +1,108 @@
+//*======= header css start =====*//
+header.top-bar{
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0px;
+    z-index: 999;
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.2s;
+}
+header{
+    nav{
+        background-color: white;
+        box-shadow: 1px 16px 21px -18px rgba(0,0,0,0.1);
+        .nav-wrapper{
+            .search{
+                position: absolute;
+                color: rgb(102, 102, 102);;
+                display: inline-block;
+                font-size: 2.1rem;
+                padding: 0 20px;
+                right: 20px;
+                top: 7px;
+                background-color: transparent;
+                @include breakpoint (sm){
+                    top: 0px;
+                }
+                &:hover{
+                    color: black;
+                }
+                .search-icon{
+                    color: rgb(102, 102, 102);
+                    font-size: 18px; 
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+            .search-field{
+                position: absolute;
+                background-color: #f3f3f3;
+                width: 100%;
+                z-index: 2;
+                transform: scaleX(0);
+                transition: all 0.2s ease-in-out;
+                transform-origin: right;
+                &.open{
+                    transform: scaleX(1);
+                }
+                .search-btn{
+                    background-color: transparent;
+                    cursor: pointer;
+                    //padding: 0px 20px;
+                    .search-icon{
+                        color: rgb(102, 102, 102);;
+                        font-size: 18px;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+                .close{
+                    color: rgb(102, 102, 102);;
+                    position: absolute;
+                    &:hover{
+                        color: black;
+                    }
+                    top: 15px;
+                    right: 20px;
+                    cursor: pointer;
+                    @include breakpoint (sm){
+                        top: 0px;
+                    }
+                }
+            }
+            .menu{
+                color: rgb(102, 102, 102);;
+                &:hover{
+                    color: black;
+                }
+            }
+            .left{
+                li{
+                    a{
+                        color: rgb(102, 102, 102);;
+                        font-weight: 400;
+                        &:hover{
+                            color: black;
+                        }
+                        .fa-angle-down{
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sidenav{
+        .dropdown-trigger{
+            .mobile-dropdown-arow{
+                float: right;
+                margin: 0px;
+                font-size: 20px;
+              }
+        }
+    }
+}
+//*======= header css ends  =====*//
