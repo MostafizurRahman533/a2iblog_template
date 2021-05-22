@@ -36,7 +36,7 @@ Typography
 }
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
   transition: all 0.3s ease-in-out;
   counter-reset: my-sec-counter;
@@ -290,4 +290,57 @@ overflow: hidden;
           }
       }
   }
+}
+.search-header{
+  margin: 20px 0;
+  p{
+      font-size: 2.5rem;
+      border-bottom: 2px solid #242526db;
+  }
+  .section-metatag{
+      a{
+          text-decoration: none;
+          color: black;
+          font-weight: 400;
+          padding: 5px 8px;
+          margin-right: 10px;
+          background-color: transparent;
+          transition: all 0.2s ease-in-out;
+          &:hover{
+              background-color: rgba(24, 24, 24, 0.18);
+          }
+      }
+  }
+}
+.item-header{
+  h3{
+    font-size: 2.5rem;
+  }
+  p{
+    font-size: 400;
+    color: rgb(29, 29, 29);
+    font-size: 1.4rem;
+    a{
+      color: #ffab40;
+      transition: all 0.1s ease-in-out;
+      &:hover{
+        color: #ffac4098;
+      }
+    }
+  }
+}
+.mt-5{
+  margin-top: 50px;
+}
+.mt-4{
+  margin-top: 40px;
+}
+.mt-3{
+  margin-top: 30px;
+}
+.mt-2{
+  margin-top: 20px;
+}
+.mt-1{
+  margin-top: 10px;
 }

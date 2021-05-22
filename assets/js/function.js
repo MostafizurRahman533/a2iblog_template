@@ -29,11 +29,78 @@ window.onscroll = pagescroll;
       direction: 'left'
     });
   });
+
+  // item box1 collapse and expand 
+  
+  function card_box1_collapse(){
+    var iso = document.querySelectorAll(".card-box-accessories");
+    var i;
+    for (i = 4; i < iso.length; i++) {
+      iso[i].classList.add("scrool-hide");
+      //console.log(iso.length); 
+    } ;
+  }
+  window.addEventListener('load', card_box1_collapse());
+  function card_box1_expand(){
+    var iso = document.querySelectorAll(".card-box-accessories");
+    var i;
+    for (i = 0; i < iso.length; i++) {
+      iso[i].classList.remove("scrool-hide");
+      //console.log(iso.length); 
+    } 
+    document.getElementById('see_1').style.display = "none";
+  }
+  
+
+  // item box2 collapse and expand 
+  
+  function card_box2_collapse(){
+    var iso = document.querySelectorAll(".card-box-accessories2");
+    var i;
+    for (i = 4; i < iso.length; i++) {
+      iso[i].classList.add("scrool-hide");
+      //console.log(iso.length); 
+    } ;
+  }
+  window.addEventListener('load', card_box2_collapse());
+  function card_box2_expand(){
+    var iso = document.querySelectorAll(".card-box-accessories2");
+    var i;
+    for (i = 0; i < iso.length; i++) {
+      iso[i].classList.remove("scrool-hide");
+      //console.log(iso.length); 
+    } 
+    
+    document.getElementById('see_2').style.display = "none";
+  }
+  // document.querySelector(".see-2").addEventListener('click', ()=>{
+  //   document.querySelector('.see-2').style.display = "none";
+  // })
+
+  // item box3 collapse and expand 
+  
+  function card_box3_collapse(){
+    var iso = document.querySelectorAll(".card-box-accessories3");
+    var i;
+    for (i = 4; i < iso.length; i++) {
+      iso[i].classList.add("scrool-hide");
+      //console.log(iso.length); 
+    } ;
+  }
+  window.addEventListener('load', card_box3_collapse());
+  function card_box3_expand(){
+    var iso = document.querySelectorAll(".card-box-accessories3");
+    var i;
+    for (i = 0; i < iso.length; i++) {
+      iso[i].classList.remove("scrool-hide");
+      //console.log(iso.length); 
+    } 
+    document.getElementById('see_3').style.display = "none";
+  }
+
+
   
   // juery js 
-  (function($){
-    'use strict';
-
             $('.dropdown-trigger').dropdown();
             //$('.search').dropdown();
             // overlay remove
@@ -47,5 +114,6 @@ window.onscroll = pagescroll;
              $(document).ready(function(){
               $('.sidenav').sidenav();
             });
-            
-    })(jQuery);
+            $(document).ready(function(){
+              $('.materialboxed').materialbox();
+            });
