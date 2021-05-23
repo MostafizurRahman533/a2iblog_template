@@ -1,12 +1,12 @@
 //*===== banner area start ====*//
 .banner-area{
     margin: 20px 0;
-    min-height: 500px;
+    min-height: 450px;
     width: 100%;
     overflow: hidden;
     position: relative;
     .swiper-container {
-        height: 500px;
+        height: 450px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -19,7 +19,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        max-height: 500px;
+        max-height: 450px;
         width: 100%;
         @include breakpoint(lg){
             position: relative;
@@ -32,7 +32,7 @@
         }
         .banner-content{
             img{
-                height: 500px;
+                height: 450px;
                 width: auto;
             }
             .content-overlay {
@@ -57,11 +57,18 @@
                       color: white;
                       display: inline-block;
                       width: 60%;
+                      @include breakpoint(max-mobile){
+                          width: 80%;
+                      }
                   }
                   p{
                       color: white;
                       display: inline-block;
                       width: 60%;
+                      
+                      @include breakpoint(max-mobile){
+                        width: 80%;
+                    }
                   }
               }
         }

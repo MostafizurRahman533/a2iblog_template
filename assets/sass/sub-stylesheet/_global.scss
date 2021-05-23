@@ -46,6 +46,9 @@ body {
 body.overflow{
 overflow: hidden;
 }
+.container{
+  max-width: 1140px !important;
+}
 .d-flex{
   display: flex;
 }
